@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <Link href="/" aria-label="Trinetra Visuals home">
             <Image
-              src="/LOGOFOOTER.png"
+              src="/LOGOFOOTER.webp"
               alt="Trinetra Visuals"
               width={360}
               height={145}

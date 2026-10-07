@@ -106,7 +106,7 @@ export default function AboutPage() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 py-8 md:grid-cols-2">
         <div className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl border border-white/10 md:max-w-sm">
           <Image
-            src="/hero-maternity.jpeg"
+            src="/hero-maternity.webp"
             alt="Signature maternity portrait by Trinetra Visuals"
             width={906}
             height={1280}

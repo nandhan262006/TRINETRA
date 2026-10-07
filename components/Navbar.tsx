@@ -19,7 +19,7 @@ function Logo() {
   return (
     <Link href="/" className="flex items-center" aria-label="Trinetra Visuals home">
       <Image
-        src="/LOGONAV.png"
+        src="/LOGONAV.webp"
         alt="Trinetra Visuals"
         width={220}
         height={64}

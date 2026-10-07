@@ -6,4 +6,4 @@ export const SITE_TAGLINE =
   "Nellore's premier maternity, newborn & wedding photography studio";
 export const SITE_DESCRIPTION =
   "Trinetra Visuals is Nellore's premier photography studio — cinematic maternity, newborn, wedding and portrait stories, styled and gallery-ready in 7 days. Call or WhatsApp +91 891 969 1473.";
-export const OG_IMAGE = "/hero-maternity.jpeg";
+export const OG_IMAGE = "/hero-maternity.webp";

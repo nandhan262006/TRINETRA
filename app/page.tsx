@@ -8,12 +8,12 @@ import { POSTS } from "../components/posts";
 import { MAP_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, STUDIO_AREA, STUDIO_NAME, WHATSAPP_URL } from "../components/contact";
 
 const HIGHLIGHTS = [
-  "/hero-maternity.jpeg",
-  "/a5344c2f-2c51-4e2d-a379-c0ed94414d42.jpeg",
-  "/477b617e-882a-421b-83fc-39a621284892.jpeg",
-  "/285c37f6-3564-41b6-b4ed-88b13926f061.jpeg",
-  "/b6af6cb7-2ae1-48b9-b7d6-b8732ddfbf61.jpeg",
-  "/474af460-248d-480d-8135-397ad71ce064.jpeg",
+  "/hero-maternity.webp",
+  "/a5344c2f-2c51-4e2d-a379-c0ed94414d42.webp",
+  "/477b617e-882a-421b-83fc-39a621284892.webp",
+  "/285c37f6-3564-41b6-b4ed-88b13926f061.webp",
+  "/b6af6cb7-2ae1-48b9-b7d6-b8732ddfbf61.webp",
+  "/474af460-248d-480d-8135-397ad71ce064.webp",
 ].map((src) => PHOTOS.find((p) => p.src === src)!);
 
 export default function Home() {
@@ -69,7 +69,7 @@ export default function Home() {
       <section className="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 py-14 md:grid-cols-2">
         <div className="overflow-hidden rounded-2xl border border-white/10">
           <Image
-            src="/a5344c2f-2c51-4e2d-a379-c0ed94414d42.jpeg"
+            src="/a5344c2f-2c51-4e2d-a379-c0ed94414d42.webp"
             alt="Maternity portrait in orange gown before the moon"
             width={1024}
             height={1536}

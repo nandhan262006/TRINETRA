@@ -25,31 +25,31 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/hero-maternity.jpeg",
+    image: "/hero-maternity.webp",
     title: "Maternity",
     description: "Goddess gowns, cinematic light and poses that honour the bump.",
     badge: "Most loved",
   },
   {
-    image: "/b6af6cb7-2ae1-48b9-b7d6-b8732ddfbf61.jpeg",
+    image: "/b6af6cb7-2ae1-48b9-b7d6-b8732ddfbf61.webp",
     title: "Newborn",
     description: "Unhurried, safety-first sessions with hand-built props.",
     badge: "Tiny",
   },
   {
-    image: "/477b617e-882a-421b-83fc-39a621284892.jpeg",
+    image: "/477b617e-882a-421b-83fc-39a621284892.webp",
     title: "Wedding",
     description: "Grand entries to quiet glances — full-day stories.",
     badge: "Grand",
   },
   {
-    image: "/0a50f1c3-02c2-46c1-80fe-014ab03503e6.jpeg",
+    image: "/0a50f1c3-02c2-46c1-80fe-014ab03503e6.webp",
     title: "Portraits",
     description: "Festive, fashion and family portraits with styling guidance.",
     badge: "You",
   },
   {
-    image: "/8ff2291c-720b-4c3b-97bb-a580cf73cf11.jpeg",
+    image: "/8ff2291c-720b-4c3b-97bb-a580cf73cf11.webp",
     title: "Couple",
     description: "Pre-wedding and pair stories, styled head to toe.",
     badge: "Duet",
@@ -103,17 +103,19 @@ const getCarouselConfig = (width: number): CarouselConfig => {
 const CarouselStacked = () => {
   const scrollProgress = useMotionValue(0);
   const startProgress = React.useRef(0);
-  const [windowWidth, setWindowWidth] = React.useState(() =>
-    typeof window === "undefined" ? 1280 : window.innerWidth,
+  // Hydration-safe: server snapshot (1280) is used for SSR *and* hydration,
+  // then React re-reads the live width after mount — no mismatch possible.
+  const subscribeWidth = React.useCallback((onChange: () => void) => {
+    window.addEventListener("resize", onChange);
+    return () => window.removeEventListener("resize", onChange);
+  }, []);
+  const windowWidth = React.useSyncExternalStore(
+    subscribeWidth,
+    () => window.innerWidth,
+    () => 1280,
   );
 
   const total = slides.length;
-
-  React.useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const config = React.useMemo(
     () => getCarouselConfig(windowWidth),
