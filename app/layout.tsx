@@ -2,8 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "../components/site";
-import "./globals.css";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "../components/site";import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,13 +50,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} — Maternity, Newborn & Wedding Photography in Nellore`,
     description: SITE_DESCRIPTION,
-    images: [{ url: OG_IMAGE, width: 906, height: 1280, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} — Maternity, Newborn & Wedding Photography in Nellore`,
     description: SITE_DESCRIPTION,
-    images: [OG_IMAGE],
   },
 };
 
