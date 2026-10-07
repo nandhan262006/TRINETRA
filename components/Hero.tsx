@@ -37,7 +37,7 @@ const SLIDES = [
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100svh-4.5rem)] flex-col overflow-hidden bg-gradient-to-b from-[#0A1866] via-[#1226AA] to-[#070F4A] text-[#E8EBF1] md:min-h-[calc(100svh-6.5rem)]">
+    <section className="relative flex min-h-[calc(100svh-4.5rem)] flex-col overflow-hidden bg-[#000f23] text-[#E8EBF1] md:min-h-[calc(100svh-6.5rem)]">
       <div className="mx-auto max-w-6xl px-5 pt-8 pb-2 text-center md:pt-12">
         <p className="text-[11px] font-medium tracking-[0.32em] text-[#C7CCD6] uppercase">
           Trinetra Visuals · Maternity · Newborn · Wedding
@@ -52,9 +52,10 @@ export default function Hero() {
 
       <PolaroidLineCarousel
         slides={SLIDES}
-        height="46svh"
+        height="54svh"
         cardWidth={320}
         sag={44}
+        sagDesktop={120}
         swing={1}
         autoplay={4500}
         string="#C7CCD6"
@@ -66,7 +67,7 @@ export default function Hero() {
       <div className="flex flex-wrap items-center justify-center gap-3 px-5 pb-6">
           <Link
             href="/portfolio"
-          className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+          className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
         >
           View Portfolio
         </Link>

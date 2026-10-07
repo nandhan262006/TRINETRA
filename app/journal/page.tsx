@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function JournalPage() {
   return (
-    <main className="flex flex-1 flex-col bg-gradient-to-b from-[#0A1866] via-[#1226AA] to-[#070F4A] text-[#E8EBF1]">
+    <main className="flex flex-1 flex-col bg-[#000f23] text-[#E8EBF1]">
       <div className="mx-auto w-full max-w-6xl px-5 pt-12 pb-4 text-center md:pt-16">
         <div className="mb-4 flex justify-center">
           <Breadcrumbs items={[{ name: "Journal" }]} />
@@ -52,7 +52,7 @@ export default function JournalPage() {
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
               />
-              <span className="absolute top-3 left-3 rounded-full bg-[#C7CCD6] px-3 py-1 text-[10px] font-bold tracking-[0.16em] text-[#0B1C7A] uppercase">
+              <span className="absolute top-3 left-3 rounded-full bg-[#C7CCD6] px-3 py-1 text-[10px] font-bold tracking-[0.16em] text-[#000f23] uppercase">
                 {p.category}
               </span>
             </div>

@@ -18,7 +18,7 @@ const HIGHLIGHTS = [
 
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col bg-[#070F4A]">
+    <main className="flex flex-1 flex-col bg-[#000f23]">
       <Hero />
 
       <section id="portfolio" className="mx-auto w-full max-w-6xl scroll-mt-28 px-5 py-14">
@@ -55,7 +55,7 @@ export default function Home() {
                 loading="lazy"
                 className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.04]"
               />
-              <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 bg-gradient-to-t from-[#070F4A]/90 to-transparent p-4 pt-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 bg-gradient-to-t from-[#000f23]/90 to-transparent p-4 pt-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span className="font-serif text-lg text-white italic">{p.title}</span>
                 <span className="shrink-0 text-[10px] tracking-[0.2em] text-[#C7CCD6] uppercase">
                   {p.category}
@@ -120,7 +120,7 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/about"
-              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
             >
               Our Story →
             </Link>
@@ -149,7 +149,7 @@ export default function Home() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noreferrer"
-          className="mt-2 inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+          className="mt-2 inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
         >
           Check Dates →
         </a>
@@ -190,7 +190,7 @@ export default function Home() {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                 />
-                <span className="absolute top-3 left-3 rounded-full bg-[#C7CCD6] px-3 py-1 text-[10px] font-bold tracking-[0.16em] text-[#0B1C7A] uppercase">
+                <span className="absolute top-3 left-3 rounded-full bg-[#C7CCD6] px-3 py-1 text-[10px] font-bold tracking-[0.16em] text-[#000f23] uppercase">
                   {p.category}
                 </span>
               </div>
@@ -210,7 +210,7 @@ export default function Home() {
       <TestimonialsMarquee />
 
       <section id="contact" className="mx-auto w-full max-w-6xl scroll-mt-28 px-5 py-14">
-        <div className="rounded-3xl border border-[#C7CCD6]/30 bg-gradient-to-r from-[#0A1866] via-[#1A33C4] to-[#0A1866] p-8 text-center md:p-12">
+        <div className="rounded-3xl border border-[#C7CCD6]/30 bg-[#000f23] p-8 text-center md:p-12">
           <p className="text-[11px] font-medium tracking-[0.32em] text-[#C7CCD6] uppercase">
             Contact · {PHONE_DISPLAY}
           </p>
@@ -222,7 +222,7 @@ export default function Home() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
             >
               WhatsApp Us
             </a>

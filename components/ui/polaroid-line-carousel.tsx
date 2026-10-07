@@ -33,6 +33,8 @@ export type PolaroidLineCarouselProps = {
   cardWidth?: number;
   /** How far the string sags in the middle, px. */
   sag?: number;
+  /** Sag used on desktop (width >= 1024px). Defaults to ~2.7x `sag` for a curvier line. */
+  sagDesktop?: number;
   /** How much the prints swing; 0 holds them still. */
   swing?: number;
   /** ms per print; 0 turns autoplay off. It waits while someone is interacting. */
@@ -327,6 +329,7 @@ export default function PolaroidLineCarousel({
   height = "100svh",
   cardWidth = 300,
   sag = 46,
+  sagDesktop,
   swing = 1,
   autoplay = 4500,
   string = "#8a7f72",
@@ -364,10 +367,10 @@ export default function PolaroidLineCarousel({
   );
   const lastTouch = React.useRef(0);
   const activeRef = React.useRef(0);
-  const opts = React.useRef({ sag, swing });
+  const opts = React.useRef({ sag, sagDesktop, swing });
   React.useEffect(() => {
-    opts.current = { sag, swing };
-  }, [sag, swing]);
+    opts.current = { sag, sagDesktop, swing };
+  }, [sag, sagDesktop, swing]);
 
   const spacing = size.cw * 1.08;
   // Infinite loop: the target travels the shortest way round to the print's
@@ -420,7 +423,12 @@ export default function PolaroidLineCarousel({
       const dt = Math.min(0.033, (now - prev) / 1000);
       prev = now;
       const { w, h, cw } = size;
-      const y0 = Math.max(40, h * 0.2);
+      const o = opts.current;
+      // Desktop gets a much curvier line; mobile keeps the shallow sag so
+      // cards don't get pushed off-screen.
+      const effSag =
+        w >= 1024 ? (o.sagDesktop ?? Math.round(o.sag * 2.7)) : o.sag;
+      const y0 = Math.max(28, h * (w >= 1024 ? 0.14 : 0.2));
       const d = drag.current;
       let lineVel: number;
       if (d && d.moved) {
@@ -430,7 +438,6 @@ export default function PolaroidLineCarousel({
         [S.off, S.vel] = springStep(S.off, S.vel, S.target, dt);
         lineVel = -(S.off - before) / Math.max(dt, 1e-3);
       }
-      const o = opts.current;
       const g = reduce ? 0 : o.swing;
       const total = n * spacing;
       // nearest print on the loop + each print's wrapped offset
@@ -461,20 +468,25 @@ export default function PolaroidLineCarousel({
         if (g) a += Math.sin(now / 1300 + i * 1.7) * 0.0009 * g;
         S.a[i] = a;
         S.w[i] = av;
-        const y = stringY(x, w, y0, o.sag) - 6;
+        const y = stringY(x, w, y0, effSag) - 6;
+        // Tilt cards tangent to the string so a deeper sag reads as a real
+        // curve: slope of 4*sag*t*(1-t) is 4*sag*(1-2t)/w.
+        const t = clamp(x / w, 0, 1);
+        const tilt = Math.atan((4 * effSag * (1 - 2 * t)) / Math.max(w, 1)) * 0.55;
+        const rot = a + tilt;
         el.style.transform =
           "translate(" +
           (x - cw / 2).toFixed(1) +
           "px," +
           y.toFixed(1) +
           "px) rotate(" +
-          a.toFixed(4) +
+          rot.toFixed(4) +
           "rad)";
         el.style.zIndex = String(i === near ? n + 1 : n - Math.abs(i - near));
       }
       pathRef.current?.setAttribute(
         "d",
-        "M0 " + y0 + " Q" + w / 2 + " " + (y0 + 2 * o.sag) + " " + w + " " + y0,
+        "M0 " + y0 + " Q" + w / 2 + " " + (y0 + 2 * effSag) + " " + w + " " + y0,
       );
       if (near !== activeRef.current) {
         activeRef.current = near;

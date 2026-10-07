@@ -81,7 +81,7 @@ export default function AboutPage() {
     })),
   };
   return (
-    <main className="flex flex-1 flex-col bg-gradient-to-b from-[#0A1866] via-[#1226AA] to-[#070F4A] text-[#E8EBF1]">
+    <main className="flex flex-1 flex-col bg-[#000f23] text-[#E8EBF1]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -143,7 +143,7 @@ export default function AboutPage() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+              className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
             >
               Book a Session
             </a>

@@ -60,7 +60,7 @@ function CtaButton({ className = "" }: { className?: string }) {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noreferrer"
-      className={`inline-flex h-10 items-center justify-center rounded-full bg-[#C7CCD6] px-5 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white ${className}`}
+      className={`inline-flex h-10 items-center justify-center rounded-full bg-[#C7CCD6] px-5 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white ${className}`}
     >
       Book a Session
     </a>
@@ -99,7 +99,7 @@ function MobileNav({ open, onNavigate }: { open: boolean; onNavigate: () => void
   if (!open) return null;
   return (
     <nav
-      className="border-t border-white/15 bg-[#0A1A78] px-5 pt-3 pb-6 text-[#E8EBF1] lg:hidden"
+      className="border-t border-white/15 bg-[#000f23] px-5 pt-3 pb-6 text-[#E8EBF1] lg:hidden"
       aria-label="Mobile"
     >
       <ul className="flex flex-col">
@@ -145,7 +145,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-gradient-to-r from-[#0A1866] via-[#1226AA] to-[#0A1866] text-[#E8EBF1] transition-shadow ${
+      className={`sticky top-0 z-50 bg-[#000f23] text-[#E8EBF1] transition-shadow ${
         scrolled ? "shadow-[0_1px_0_rgba(199,204,214,0.35)]" : ""
       }`}
     >

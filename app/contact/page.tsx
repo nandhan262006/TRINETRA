@@ -44,7 +44,7 @@ const CARDS = [
 
 export default function ContactPage() {
   return (
-    <main className="flex flex-1 flex-col bg-gradient-to-b from-[#0A1866] via-[#1226AA] to-[#070F4A] text-[#E8EBF1]">
+    <main className="flex flex-1 flex-col bg-[#000f23] text-[#E8EBF1]">
       <div className="mx-auto w-full max-w-6xl px-5 pt-12 pb-6 text-center md:pt-16">
         <div className="mb-4 flex justify-center">
           <Breadcrumbs items={[{ name: "Contact" }]} />
@@ -71,12 +71,12 @@ export default function ContactPage() {
               : {})}
             className={`rounded-2xl border p-6 transition-colors ${
               c.primary
-                ? "border-[#C7CCD6]/50 bg-[#C7CCD6] text-[#0B1C7A] hover:bg-white"
+                ? "border-[#C7CCD6]/50 bg-[#C7CCD6] text-[#000f23] hover:bg-white"
                 : "border-[#C7CCD6]/25 bg-white/[0.04] text-[#E8EBF1] hover:border-white"
             }`}
           >
             <h2 className="font-serif text-2xl italic">{c.title}</h2>
-            <p className={`mt-1 text-sm ${c.primary ? "text-[#0B1C7A]/70" : "text-[#C7CCD6]"}`}>
+            <p className={`mt-1 text-sm ${c.primary ? "text-[#000f23]/70" : "text-[#C7CCD6]"}`}>
               {c.text}
             </p>
             <p className="mt-4 text-[13px] font-bold tracking-[0.12em] uppercase">
@@ -123,7 +123,7 @@ export default function ContactPage() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-12 items-center rounded-full bg-[#C7CCD6] px-8 text-[13px] font-bold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+          className="inline-flex h-12 items-center rounded-full bg-[#C7CCD6] px-8 text-[13px] font-bold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
         >
           WhatsApp {PHONE_DISPLAY}
         </a>

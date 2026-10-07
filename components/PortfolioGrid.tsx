@@ -27,7 +27,7 @@ export default function PortfolioGrid() {
               aria-pressed={on}
               className={`inline-flex h-10 items-center gap-2 rounded-full px-5 text-[12px] font-semibold tracking-[0.14em] uppercase transition-colors ${
                 on
-                  ? "bg-[#C7CCD6] text-[#0B1C7A]"
+                  ? "bg-[#C7CCD6] text-[#000f23]"
                   : "border border-[#C7CCD6]/40 text-[#C7CCD6] hover:border-white hover:text-white"
               }`}
             >
@@ -53,7 +53,7 @@ export default function PortfolioGrid() {
               loading="lazy"
               className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.04]"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 bg-gradient-to-t from-[#070F4A]/90 to-transparent p-4 pt-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 bg-gradient-to-t from-[#000f23]/90 to-transparent p-4 pt-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <span className="font-serif text-lg text-white italic">{p.title}</span>
               <span className="shrink-0 text-[10px] tracking-[0.2em] text-[#C7CCD6] uppercase">
                 {p.category}
@@ -68,7 +68,7 @@ export default function PortfolioGrid() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+          className="inline-flex h-11 items-center rounded-full bg-[#C7CCD6] px-6 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
         >
           Book This Style
         </a>

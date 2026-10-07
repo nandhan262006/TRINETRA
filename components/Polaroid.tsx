@@ -30,7 +30,7 @@ export default function Polaroid({
         aria-hidden="true"
         className="absolute -top-3 left-1/2 z-10 h-6 w-20 -translate-x-1/2 rotate-[-4deg] bg-[#C7CCD6]/80 shadow-sm"
       />
-      <div className="overflow-hidden bg-[#0A1866]/5">
+      <div className="overflow-hidden bg-[#000f23]/5">
         <Image
           src={src}
           alt={alt}

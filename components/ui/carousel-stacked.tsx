@@ -229,7 +229,7 @@ const Card = ({ slide, index, total, progress, config }: CardProps) => {
   return (
     <motion.div
       style={{ x, rotate, y, scale, opacity, zIndex }}
-      className="group pointer-events-none absolute h-56 w-44 overflow-hidden rounded-2xl border border-white/15 bg-[#0A1866] sm:h-80 sm:w-56 lg:h-96 lg:w-64"
+      className="group pointer-events-none absolute h-56 w-44 overflow-hidden rounded-2xl border border-white/15 bg-[#000f23] sm:h-80 sm:w-56 lg:h-96 lg:w-64"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -247,7 +247,7 @@ const Card = ({ slide, index, total, progress, config }: CardProps) => {
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-      <span className="absolute top-3 right-3 rounded-full bg-[#C7CCD6] px-2 py-0.5 text-xs font-bold tracking-widest text-[#0B1C7A] uppercase sm:top-5 sm:right-5 sm:px-3 sm:py-1">
+      <span className="absolute top-3 right-3 rounded-full bg-[#C7CCD6] px-2 py-0.5 text-xs font-bold tracking-widest text-[#000f23] uppercase sm:top-5 sm:right-5 sm:px-3 sm:py-1">
         {slide.badge}
       </span>
 

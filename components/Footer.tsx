@@ -19,7 +19,7 @@ const LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#050B38] text-[#E8EBF1]">
+    <footer className="border-t border-white/10 bg-[#000f23] text-[#E8EBF1]">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <Link href="/" aria-label="Trinetra Visuals home">
@@ -73,7 +73,7 @@ export default function Footer() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-10 items-center rounded-full bg-[#C7CCD6] px-5 text-[12px] font-semibold tracking-[0.14em] text-[#0B1C7A] uppercase transition-colors hover:bg-white"
+                className="inline-flex h-10 items-center rounded-full bg-[#C7CCD6] px-5 text-[12px] font-semibold tracking-[0.14em] text-[#000f23] uppercase transition-colors hover:bg-white"
               >
                 WhatsApp Us
               </a>

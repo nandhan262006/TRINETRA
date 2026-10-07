@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   return (
-    <main className="flex flex-1 flex-col bg-gradient-to-b from-[#0A1866] via-[#1226AA] to-[#070F4A] text-[#E8EBF1]">
+    <main className="flex flex-1 flex-col bg-[#000f23] text-[#E8EBF1]">
       <div className="mx-auto w-full max-w-6xl px-5 pt-12 pb-4 text-center md:pt-16">
         <div className="mb-4 flex justify-center">
           <Breadcrumbs items={[{ name: "Portfolio" }]} />

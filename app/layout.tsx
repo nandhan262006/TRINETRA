@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A1866",
+  themeColor: "#000f23",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -142,7 +142,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <StudioJsonLd />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#000f23]">
         <Navbar />
         {children}
         <Footer />
