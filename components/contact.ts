@@ -1,0 +1,9 @@
+export const PHONE_DISPLAY = "+91 891 969 1473";
+export const PHONE_TEL = "tel:+918919691473";
+export const WHATSAPP_URL =
+  "https://wa.me/918919691473?text=Hi%20Trinetra%20Visuals!%20I%20want%20to%20book%20a%20session.";
+export const MAP_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.731974253652!2d79.98388107582669!3d14.442603880923867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4cf30005c73b25%3A0x5c401f3f06c95698!2sTrinetra%20Visuals!5e0!3m2!1sen!2sin!4v1791347874496!5m2!1sen!2sin";
+export const STUDIO_NAME = "Trinetra Visuals";
+export const STUDIO_AREA = "Nellore, Andhra Pradesh";
+export const STUDIO_HOURS = "Open all days · 9 AM – 8 PM";
