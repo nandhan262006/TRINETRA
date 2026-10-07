@@ -103,11 +103,13 @@ export default function Home() {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-[11px] font-medium tracking-[0.28em] text-[#C7CCD6] uppercase">
+            Hyderabad | Nellore | Bengaluru
+          </p>
           <div className="mt-5 flex flex-wrap items-baseline gap-x-8 gap-y-2">
             {[
               ["500+", "shoots"],
               ["6+", "years"],
-              ["4.9★", "rated"],
             ].map(([big, small]) => (
               <div key={small} className="flex items-baseline gap-2">
                 <span className="font-serif text-2xl text-white">{big}</span>

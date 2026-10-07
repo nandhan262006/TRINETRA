@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { INSTAGRAM_URL, WHATSAPP_URL } from "./contact";
+import { EMAIL_DISPLAY, EMAIL_MAILTO, INSTAGRAM_URL, WHATSAPP_URL } from "./contact";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -154,8 +154,8 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-1.5 text-[11px] tracking-[0.16em] text-[#C7CCD6] uppercase">
           <p>Available for weddings · portraits · editorial</p>
           <div className="flex items-center gap-4">
-            <a href="mailto:hello@trinetra.photo" className="transition-colors hover:text-white">
-              hello@trinetra.photo
+            <a href={EMAIL_MAILTO} className="transition-colors hover:text-white">
+              {EMAIL_DISPLAY}
             </a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               Instagram
