@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { WHATSAPP_URL } from "./contact";
+import { INSTAGRAM_URL, WHATSAPP_URL } from "./contact";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -157,7 +157,7 @@ export default function Navbar() {
             <a href="mailto:hello@trinetra.photo" className="transition-colors hover:text-white">
               hello@trinetra.photo
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="transition-colors hover:text-white">
               Instagram
             </a>
           </div>

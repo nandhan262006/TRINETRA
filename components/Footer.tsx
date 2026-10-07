@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  INSTAGRAM_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
   STUDIO_AREA,
@@ -66,6 +67,16 @@ export default function Footer() {
             <li>
               <a href={PHONE_TEL} className="transition-colors hover:text-white">
                 {PHONE_DISPLAY}
+              </a>
+            </li>
+            <li>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="transition-colors hover:text-white"
+              >
+                Instagram · @trinetravisuals_
               </a>
             </li>
             <li>

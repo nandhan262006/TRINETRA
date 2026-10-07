@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 const STATS: [string, string][] = [
   ["500+", "shoots delivered"],
   ["6+", "years behind the lens"],
-  ["4.9★", "loved by families"],
 ];
 
 const CRAFT = [  {
@@ -62,7 +61,7 @@ const FAQS = [
   },
   {
     q: "Do you travel outside Nellore?",
-    a: "Absolutely. We regularly shoot in Tirupati, Vijayawada, Chennai and Hyderabad. Travel within Nellore is included; outside trips add a small travel fee.",
+    a: "Absolutely. With our home studio in Nellore, we regularly shoot in Hyderabad, Bengaluru, Tirupati, Vijayawada and Chennai. Travel within Nellore is included; outside trips add a small travel fee.",
   },
   {
     q: "How do we book?",
@@ -99,7 +98,8 @@ export default function AboutPage() {
         <p className="mx-auto mt-4 max-w-xl text-[15px] leading-7 text-[#C7CCD6]">
           Trinetra Visuals began in Nellore with one belief — your biggest
           moments deserve bigger frames. Today we shoot maternity, newborn,
-          wedding and portrait stories across Andhra Pradesh and beyond.
+          wedding and portrait stories in Hyderabad | Nellore | Bengaluru and
+          beyond.
         </p>
       </div>
 
@@ -220,7 +220,7 @@ export default function AboutPage() {
           ))}
         </div>
         <p className="mt-10 text-center text-sm text-[#C7CCD6]">
-          Based in Nellore · shooting across Andhra Pradesh —{" "}
+          Based in Nellore · serving Hyderabad | Nellore | Bengaluru —{" "}
           <Link href="/contact" className="text-white underline underline-offset-4">
             say hello
           </Link>

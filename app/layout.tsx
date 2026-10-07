@@ -78,7 +78,7 @@ function StudioJsonLd() {
         image: `${SITE_URL}/hero-maternity.webp`,
         logo: `${SITE_URL}/LOGONAV.webp`,
         description: SITE_DESCRIPTION,
-        telephone: "+918919691473",
+        telephone: "+917794950861",
         priceRange: "₹₹",
         address: {
           "@type": "PostalAddress",
@@ -89,6 +89,7 @@ function StudioJsonLd() {
         geo: { "@type": "GeoCoordinates", latitude: 14.4426, longitude: 79.9839 },
         hasMap:
           "https://www.google.com/maps/search/?api=1&query=Trinetra+Visuals+Nellore",
+        sameAs: ["https://www.instagram.com/trinetravisuals_/"],
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: [
@@ -103,7 +104,7 @@ function StudioJsonLd() {
           opens: "09:00",
           closes: "20:00",
         },
-        areaServed: ["Nellore", "Tirupati", "Vijayawada", "Chennai", "Hyderabad"],
+        areaServed: ["Hyderabad", "Nellore", "Bengaluru", "Tirupati", "Vijayawada", "Chennai"],
         knowsAbout: [
           "Maternity photography",
           "Newborn photography",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {
+  INSTAGRAM_URL,
   MAP_EMBED_SRC,
   PHONE_DISPLAY,
   PHONE_TEL,
@@ -14,7 +15,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Contact — Book Your Date",
   description:
-    "Visit the Trinetra Visuals studio in Nellore, call or WhatsApp +91 891 969 1473 to book your maternity, newborn or wedding shoot.",
+    "Visit the Trinetra Visuals studio in Nellore, call or WhatsApp +91 77949 50861 to book your maternity, newborn or wedding shoot.",
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     title: "Contact — Trinetra Visuals",
@@ -40,6 +41,14 @@ const CARDS = [
     external: false,
     primary: false,
   },
+  {
+    title: "Instagram",
+    text: "See latest work — vow, bump & giggle.",
+    label: "@trinetravisuals_",
+    href: INSTAGRAM_URL,
+    external: true,
+    primary: false,
+  },
 ];
 
 export default function ContactPage() {
@@ -61,7 +70,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="mx-auto grid w-full max-w-6xl gap-4 px-5 pb-8 sm:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-6xl gap-4 px-5 pb-8 sm:grid-cols-2 lg:grid-cols-3">
         {CARDS.map((c) => (
           <a
             key={c.title}
