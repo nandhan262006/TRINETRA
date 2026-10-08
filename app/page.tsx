@@ -8,9 +8,9 @@ import { POSTS } from "../components/posts";
 import { MAP_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, STUDIO_AREA, STUDIO_NAME, WHATSAPP_URL } from "../components/contact";
 
 const HIGHLIGHTS = [
+  "/477b617e-882a-421b-83fc-39a621284892.webp",
   "/hero-maternity.webp",
   "/a5344c2f-2c51-4e2d-a379-c0ed94414d42.webp",
-  "/477b617e-882a-421b-83fc-39a621284892.webp",
   "/285c37f6-3564-41b6-b4ed-88b13926f061.webp",
   "/b6af6cb7-2ae1-48b9-b7d6-b8732ddfbf61.webp",
   "/474af460-248d-480d-8135-397ad71ce064.webp",
@@ -87,14 +87,14 @@ export default function Home() {
           </h2>
           <p className="mt-4 max-w-md text-lg leading-8 text-[#C7CCD6] md:text-xl md:leading-9">
             Trinetra Visuals is Nellore&apos;s premier photography studio,
-            crafting cinematic maternity, newborn, wedding and portrait
+            crafting cinematic wedding, maternity, newborn and portrait
             stories. Every session is styled around you — signature gowns,
             hand-built newborn props and grand wedding frames — shot
             unhurried, guided pose by pose, and delivered gallery-ready in
             7 days.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            {["Maternity", "Newborn", "Wedding", "Portraits"].map((t) => (
+            {["Wedding", "Maternity", "Newborn", "Portraits"].map((t) => (
               <span
                 key={t}
                 className="inline-flex h-8 items-center rounded-full border border-[#C7CCD6]/30 px-3.5 text-[11px] tracking-[0.16em] text-[#E8EBF1] uppercase"

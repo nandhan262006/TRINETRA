@@ -25,6 +25,12 @@ interface Slide {
 
 const slides: Slide[] = [
   {
+    image: "/477b617e-882a-421b-83fc-39a621284892.webp",
+    title: "Wedding",
+    description: "Grand entries to quiet glances — full-day stories.",
+    badge: "Grand",
+  },
+  {
     image: "/hero-maternity.webp",
     title: "Maternity",
     description: "Goddess gowns, cinematic light and poses that honour the bump.",
@@ -35,12 +41,6 @@ const slides: Slide[] = [
     title: "Newborn",
     description: "Unhurried, safety-first sessions with hand-built props.",
     badge: "Tiny",
-  },
-  {
-    image: "/477b617e-882a-421b-83fc-39a621284892.webp",
-    title: "Wedding",
-    description: "Grand entries to quiet glances — full-day stories.",
-    badge: "Grand",
   },
   {
     image: "/0a50f1c3-02c2-46c1-80fe-014ab03503e6.webp",

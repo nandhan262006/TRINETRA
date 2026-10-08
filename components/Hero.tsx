@@ -3,6 +3,8 @@ import PolaroidLineCarousel from "./ui/polaroid-line-carousel";
 import { WHATSAPP_URL } from "./contact";
 
 const SLIDES = [
+  { image: "/477b617e-882a-421b-83fc-39a621284892.webp", title: "The Grand Entry", alt: "Bride walking toward a wedding mandap" },
+  { image: "/60090bfa-2ec0-4f3b-afaf-eac07d98d4f4.webp", title: "Henna Hands", alt: "Mehndi hands detail on blue lehenga" },
   { image: "/hero-maternity.webp", title: "Mama Glow", alt: "Maternity portrait in red saree holding a pot" },
   { image: "/0a50f1c3-02c2-46c1-80fe-014ab03503e6.webp", title: "Festive Muse", alt: "Portrait in pink and green traditional wear" },
   { image: "/0ca4084d-9bd3-4537-b135-a6d05844fae8.webp", title: "Silhouette Bump", alt: "Black and white maternity silhouette" },
@@ -10,9 +12,7 @@ const SLIDES = [
   { image: "/3629146f-ad39-4ef4-905b-33e02f3cd866.webp", title: "Earth Mama", alt: "Maternity portrait in a field at golden hour" },
   { image: "/3ae72689-e1f6-4863-8a39-5decdad47e2f.webp", title: "Sky Lehenga", alt: "Portrait in light blue lehenga outdoors" },
   { image: "/474af460-248d-480d-8135-397ad71ce064.webp", title: "Crimson Queen", alt: "Maternity portrait in red gown on red backdrop" },
-  { image: "/477b617e-882a-421b-83fc-39a621284892.webp", title: "The Grand Entry", alt: "Bride walking toward a wedding mandap" },
   { image: "/58c982d6-8281-4de6-b303-3e7e0d7dca49.webp", title: "Seated Serenity", alt: "Seated maternity portrait in blue saree" },
-  { image: "/60090bfa-2ec0-4f3b-afaf-eac07d98d4f4.webp", title: "Henna Hands", alt: "Mehndi hands detail on blue lehenga" },
   { image: "/60296081-7b2a-4a68-be75-b018704c595b.webp", title: "City Love", alt: "Couple portrait in the city" },
   { image: "/68ca6d28-d4ac-4ccc-a31f-1fa712c8dbf7.webp", title: "Royal Seat", alt: "Seated maternity portrait in pink and navy" },
   { image: "/68f9e3cb-7676-41a0-a88c-550a0b3b518b.webp", title: "Hatchling", alt: "Newborn curled in an eggshell prop" },
@@ -40,7 +40,7 @@ export default function Hero() {
     <section className="relative flex min-h-[calc(100svh-4.5rem)] flex-col overflow-hidden bg-[#000f23] text-[#E8EBF1] md:min-h-[calc(100svh-6.5rem)]">
       <div className="mx-auto max-w-6xl px-5 pt-8 pb-2 text-center md:pt-12">
         <p className="text-[11px] font-medium tracking-[0.32em] text-[#C7CCD6] uppercase">
-          Trinetra Visuals · Maternity · Newborn · Wedding
+          Trinetra Visuals · Wedding · Maternity · Newborn
         </p>
         <h1 className="mx-auto mt-3 max-w-3xl font-serif text-4xl leading-[1.08] font-medium text-balance md:text-6xl">
           Vow, Bump <span className="text-[#C7CCD6] italic">&amp; Giggle</span>
@@ -85,7 +85,7 @@ export default function Hero() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-2 px-5 py-3 text-center">
           {[
             ["500+", "shoots delivered"],
-            ["Maternity", "newborn · wedding"],
+            ["Wedding", "maternity · newborn"],
             ["Gallery-ready", "in 7 days"],
           ].map(([big, small]) => (
             <div key={small} className="flex items-baseline gap-2">

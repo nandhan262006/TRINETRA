@@ -6,11 +6,11 @@ import { SITE_URL } from "../../components/site";
 export const metadata: Metadata = {
   title: "Portfolio — 30 Real Shoots",
   description:
-    "Maternity, newborn, wedding and portrait galleries by Trinetra Visuals, Nellore.",
+    "Wedding, maternity, newborn and portrait galleries by Trinetra Visuals, Nellore.",
   alternates: { canonical: `${SITE_URL}/portfolio` },
   openGraph: {
     title: "Portfolio — Trinetra Visuals",
-    description: "30 real maternity, newborn, wedding and portrait shoots.",
+    description: "30 real wedding, maternity, newborn and portrait shoots.",
     url: `${SITE_URL}/portfolio`,
   },
 };
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
           Portfolio
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-[15px] leading-7 text-[#C7CCD6]">
-          Maternity, newborn, wedding &amp; portraits — every frame at its
+          Wedding, maternity, newborn &amp; portraits — every frame at its
           natural ratio, nothing cropped.
         </p>
       </div>

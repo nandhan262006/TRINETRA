@@ -11,9 +11,9 @@ export type Photo = {
 
 export const CATEGORIES: { id: PhotoCategory | "all"; label: string }[] = [
   { id: "all", label: "All" },
+  { id: "wedding", label: "Wedding" },
   { id: "maternity", label: "Maternity" },
   { id: "newborn", label: "Newborn" },
-  { id: "wedding", label: "Wedding" },
   { id: "portraits", label: "Portraits" },
 ];
 

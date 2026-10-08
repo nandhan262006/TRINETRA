@@ -9,12 +9,12 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "About — Nellore's Premier Photography Studio",
   description:
-    "Trinetra Visuals is a premier maternity, newborn and wedding photography studio based in Nellore, Andhra Pradesh.",
+    "Trinetra Visuals is a premier wedding, maternity and newborn photography studio based in Nellore, Andhra Pradesh.",
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
     title: "About — Trinetra Visuals, Nellore",
     description:
-      "Premier maternity, newborn and wedding photography studio in Nellore.",
+      "Premier wedding, maternity and newborn photography studio in Nellore.",
     url: `${SITE_URL}/about`,
   },
 };
@@ -25,16 +25,16 @@ const STATS: [string, string][] = [
 ];
 
 const CRAFT = [  {
+    title: "Wedding",
+    text: "From grand mandap entries to quiet in-between glances — full-day stories, gallery-ready.",
+  },
+  {
     title: "Maternity",
     text: "Goddess-style gowns, cinematic light and poses that honour the bump — in-studio or on location.",
   },
   {
     title: "Newborn",
     text: "Unhurried, safety-first sessions with hand-built props, wraps and dreamy pastel sets.",
-  },
-  {
-    title: "Wedding",
-    text: "From grand mandap entries to quiet in-between glances — full-day stories, gallery-ready.",
   },
   {
     title: "Portraits",
@@ -97,8 +97,8 @@ export default function AboutPage() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-[15px] leading-7 text-[#C7CCD6]">
           Trinetra Visuals began in Nellore with one belief — your biggest
-          moments deserve bigger frames. Today we shoot maternity, newborn,
-          wedding and portrait stories in Hyderabad | Nellore | Bengaluru and
+          moments deserve bigger frames. Today we shoot wedding, maternity,
+          newborn and portrait stories in Hyderabad | Nellore | Bengaluru and
           beyond.
         </p>
       </div>
